@@ -2,6 +2,13 @@ const yargs = require('yargs');
 const axios = require('axios');
 
 
+var addressOptions = {
+	demand: true,
+	alias: 'a',
+	describe: 'Address to fetch weather for',
+	string: true
+}
+
 const argv = yargs
 	.options({
 		a: {
@@ -51,6 +58,7 @@ axios.get(geocodeUrl).then((response) => {
 	}
 	
 });
+
 
 
 
