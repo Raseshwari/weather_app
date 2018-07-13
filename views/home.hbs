@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <title>Home Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Sirin+Stencil" rel="stylesheet">
+    <style>
+        .display {
+            position: relative;
+            background: linear-gradient(#242222,transparent), url("https://images.unsplash.com/photo-1488233677590-873d4bf8c77c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbff828f05f0c09c9b1780dc6dbe28e8&auto=format&fit=crop&w=750&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container{
+          width: 50%;
+          margin-top: 25%;
+        }
+        body{
+          color:white;
+        }
+    </style>
+</head>
+<body class="display">
+  
+	<!-- <form action="/" method="post">
+  	<div class="form-row">
+  		<div class="form-group box">
+    		<label for="city"></label>
+    		<input type="text" name="city" id="city" placeholder= "Rochester, Mumbai, etc." required>
+    </div>
+  	
+  	<div class="form-">
+    	<input type="submit" value="Start Search">
+  	</div>
+    </div>
+</form> -->
+
+
+
+<div class="container">
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="city">Enter the location</label>
+        <input class= "form-control" type="text" name="city" id="city" placeholder= "Rochester, India, etc." required>
+  </div>
+  <button type="submit" class="btn btn-primary">Get Weather</button>
+</form>
+</div>
+</body>
+</html>

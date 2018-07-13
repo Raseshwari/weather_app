@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta name="viewport" content="width=device-width" />
+	    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<title>Home Page</title>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Sirin+Stencil" rel="stylesheet">
+	  <style>
+	      .display {
+	          position: relative;
+	          background:url("https://images.unsplash.com/photo-1488233677590-873d4bf8c77c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbff828f05f0c09c9b1780dc6dbe28e8&auto=format&fit=crop&w=750&q=80");
+	          background-size: cover;
+	          background-position: center;
+	          background-repeat: no-repeat;
+	          background-attachment: fixed;
+	      }
+	      .container{
+	        width: 50%;
+	        margin-top: 15%;
+	        margin-left:28%;
+	      }
+	      .panel-heading{
+	      	background-color: lightgrey;
+	      	font-family:Stencil
+	      	height: 10px;
+	      }
+	      .panel-body{
+	      	background-color: white;
+	      }
+	      body{
+	        /*color:black;*/
+	        font-family: Sirin;
+	      }
+	      .headings{
+	      	font-family: "Cabin sketch";
+	      	font-color: white;
+	      	text-align: center;
+	      	font-size: 30px;
+	      }
+	      .colstyle{
+	      	background-color: lightgrey;
+	      	border-color: black;
+	      	border-style: double;
+	      	font-family: "Sirin";
+	      	font-size:20px;
+	      }
+	      .headingstyle{
+	      	background-color: white;
+	      	border-color: black;
+	      	border-style: double;
+	      }
+	  </style>
+	<title>Weather Details</title>
+</head>
+<body class="display">
+
+<div class="container">
+   <div class="row headings">
+    <div class="col headingstyle">
+      Weather Details
+    </div>
+  </div>
+  <div class="row">
+    <div class="col colstyle">
+      Temperature : {{temp}}°F
+    </div>
+  </div>
+  <div class="row">
+    <div class="col colstyle">
+      But it feels like {{atemp}}°F !!
+    </div>
+  </div>
+  <div class="row">
+    <div class="col colstyle">
+      Humidity : {{hum}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col colstyle">
+      Precipitation : {{precipitation}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col colstyle">
+      WindSpeed : {{windspeed}}
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <p><a href="/"><button type="submit" class="btn btn-primary">Home</button></a></p>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="well">
+	<h1 class="headings">Weather Details</h1>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Temperature (in Farheniet)</div>
+	  <div class="panel-body">
+	    {{temp}}
+	  </div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Feels like</div>
+	  <div class="panel-body">
+	    {{atemp}}
+	  </div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Humidity</div>
+	  <div class="panel-body">
+	    {{hum}}
+	  </div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Precipitation</div>
+	  <div class="panel-body">
+	    {{precipitation}}
+	  </div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Windspeed</div>
+	  <div class="panel-body">
+	    {{windspeed}}
+	  </div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Time</div>
+	  <div class="panel-body">
+	    {{time}}
+	  </div>
+	</div>
+ -->
+</div>
+</body>
+</html>
